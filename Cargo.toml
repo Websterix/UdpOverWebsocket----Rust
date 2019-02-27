@@ -1,0 +1,23 @@
+[package]
+name = "udp_loss"
+version = "0.1.0"
+authors = ["Akiner Alkan <akineralkan@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1.20"
+
+tokio = "0.1.14"
+tokio-io = "0.1.11"
+tokio-codec = "0.1.1"
+env_logger = "0.6.0"
+bytes = "0.4.11"
+websocket = "0.22.0"
+
+[[bin]]
+name = "udp_proxy"
+path = "src/udp_proxy.rs"
+
+[[bin]]
+name = "udp_app"
+path = "src/udp_app.rs"
